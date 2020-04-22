@@ -144,7 +144,7 @@ public class Sorts
     }
 
     public static void selectionSorts() {
-    	System.out.println("best sort");
+    	System.out.println("Best sort is selection sort due to its simplicity, efficiency, and ability to be used on lists such as linkedlists.");
     }
     
     /**
