@@ -113,8 +113,8 @@ public class Sorts
         return ilist;
     }
 
-    public static void SelectionSorts() {
-    	//idk insert code?
+    public static void selectionSorts() {
+    	System.out.println("best sort");
     }
     
     /**
@@ -133,5 +133,8 @@ public class Sorts
         // Insertion Sort
         is.listType = ListType.Insert;
         System.out.println(is);
+        
+        //selectionSorts
+        selectionSorts();
     }
 }
