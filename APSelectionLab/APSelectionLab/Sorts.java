@@ -113,6 +113,10 @@ public class Sorts
         return ilist;
     }
 
+    public static void SelectionSorts() {
+    	//idk insert code?
+    }
+    
     /**
      *
      */
