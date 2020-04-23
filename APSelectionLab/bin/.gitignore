@@ -2,7 +2,10 @@
 /Alphabet.class
 /Animal$KeyType.class
 /Animal.class
+/Boba$KeyType.class
+/Boba.class
 /CircleQueue.class
+/CircleQueueAL.class
 /CircleQueueDriver.class
 /ConsoleMethods.class
 /Cupcakes$KeyType.class
@@ -11,5 +14,3 @@
 /LinkedList.class
 /Sorts$ListType.class
 /Sorts.class
-/Boba.class
-/Boba$KeyType.class
