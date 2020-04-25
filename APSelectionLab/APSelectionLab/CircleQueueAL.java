@@ -67,7 +67,7 @@ public class CircleQueueAL {
 
 	    
 	  }
-	  private int[] SelectionSort() {
+	 public int[] SelectionSort() {
 	    	for (int i = 0; i < slist.length - 1; i++)
 	    	{
 	    		//find min val in unsorted part of array
@@ -87,6 +87,7 @@ public class CircleQueueAL {
 	    			}
 	    	return slist;
 	    	}
+	  
 }
 
 	

@@ -204,7 +204,35 @@ public class CircleQueue
     	node2 = node2.getNext();
     } 
     
-  } 
-  
+  }
+  /**
+   * Performs Selection Sort
+   */
+  public void SelectionSort() {
+	 // LinkedList smallest;
+      LinkedList node1 = headNode;
+	 // currentNode = headNode;
+      LinkedList x;
+
+// Traverse the List 
+while (node1 != null) { 
+    LinkedList min = node1; 
+    LinkedList r = (node1 == null) ? null : node1.getNext();
+
+    // Traverse the unsorted sublist 
+    while (r != null) { 
+        if (min.toString().compareTo(r.toString())>0) 
+            min = r; 
+
+        r = r.getNext(); 
+    } 
+
+    // Swap Data 
+    x = node1; 
+    node1 = min;
+    min = x;
+    node1 = node1.getNext(); 
+} 
+}
 }
 

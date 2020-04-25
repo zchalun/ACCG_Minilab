@@ -4,9 +4,10 @@
  * @author     John Mortensen
  *
  */
+import java.util.*;
 public class CircleQueueDriver {
 	
-	private CircleQueue cqueue;	// circle queue object
+	private static CircleQueue cqueue;	// circle queue object
 	private int count; // number of objects in circle queue
 
 	/* 
@@ -66,35 +67,42 @@ public class CircleQueueDriver {
 	 */
 	public static void main(String[] args)
 	
-	{			
+	{		
+		
 		//queue
-		CircleQueueDriver trial = new CircleQueueDriver();
-		
-		//add different types of objects to the same opaque queue
-		trial.addCQueue(Animal.animalData());
-		trial.addCQueue(Cupcakes.cupCakeData());
-		trial.addCQueue(Alphabet.alphabetData());		
-		trial.addCQueue(Boba.bobaData());
-		//display queue objects in queue order
-		trial.showCQueue();
-		
-		//sort queue objects by specific element within the object and display in sort order
-		Animal.key = Animal.KeyType.name;
-		Cupcakes.key = Cupcakes.KeyType.flavor;
-		Alphabet.key = Alphabet.KeyType.letter;
-		Boba.key = Boba.KeyType.flavor;
-		trial.cqueue.insertionSort();
-		trial.showCQueue();
-		
-		//display queue objects
-		Animal.key = Animal.KeyType.combo;
-		Cupcakes.key = Cupcakes.KeyType.combo;
-		Alphabet.key = Alphabet.KeyType.combo;
-		Boba.key = Boba.KeyType.combo;
-		trial.showCQueue();
-		
-		//delete queue objects
-		trial.deleteCQueue();
-	}
-	
+				CircleQueueDriver trial = new CircleQueueDriver();
+				
+				//add different types of objects to the same opaque queue
+				trial.addCQueue(Animal.animalData());
+				trial.addCQueue(Cupcakes.cupCakeData());
+				trial.addCQueue(Alphabet.alphabetData());		
+				trial.addCQueue(Boba.bobaData());
+				//display queue objects in queue order
+				trial.showCQueue();
+				
+				//sort queue objects by specific element within the object and display in sort order
+				Animal.key = Animal.KeyType.name;
+				Cupcakes.key = Cupcakes.KeyType.flavor;
+				Alphabet.key = Alphabet.KeyType.letter;
+				Boba.key = Boba.KeyType.flavor;
+				trial.cqueue.insertionSort();
+				trial.showCQueue();
+				
+				Animal.key = Animal.KeyType.name;
+				Cupcakes.key = Cupcakes.KeyType.flavor;
+				Alphabet.key = Alphabet.KeyType.letter;
+				Boba.key = Boba.KeyType.flavor;
+				trial.cqueue.SelectionSort();
+				trial.showCQueue();
+				
+				//display queue objects
+				Animal.key = Animal.KeyType.combo;
+				Cupcakes.key = Cupcakes.KeyType.combo;
+				Alphabet.key = Alphabet.KeyType.combo;
+				Boba.key = Boba.KeyType.combo;
+				trial.showCQueue();
+				
+				//delete queue objects
+				trial.deleteCQueue();
+}
 }
